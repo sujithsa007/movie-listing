@@ -29,7 +29,6 @@ const MovieList = () => {
   */
   useEffect(() => {
     if (currentPage <= totalPages) {
-      console.log(currentPage);
       fetchData(currentPage);
     }
   }, [currentPage]);
