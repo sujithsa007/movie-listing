@@ -1,0 +1,103 @@
+/*
+All styles used across the movieList and movieTile components
+*/
+
+.scrollable-container {
+  height: calc(100vh - 20px);
+  overflow-y: scroll;
+}
+
+.mobile-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 10px;
+  gap: 0;
+  overflow: hidden;
+}
+
+.grid-item {
+  width: calc(33.33% - 10px);
+  margin: 10px 5px;
+  background-color: #171717;
+  text-align: left;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.page-title {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.item-title {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  background-image: url("https://test.create.diagnal.com/images/nav_bar.png");
+  background-size: cover;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.back-button {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.search-button {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+}
+
+.search-input {
+  flex-grow: 1;
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 50%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.scrollable-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollable-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.scrollable-container.scrollable {
+  scrollbar-width: auto;
+  -ms-overflow-style: auto;
+}
