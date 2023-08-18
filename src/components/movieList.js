@@ -47,7 +47,6 @@ const MovieList = () => {
       ) {
         dispatch(setCurrentPage(currentPage + 1));
       }
-      
     };
 
     window.addEventListener("scroll", handleScroll);

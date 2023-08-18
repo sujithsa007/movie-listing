@@ -30,6 +30,7 @@ const movieSlice = createSlice({
   },
 });
 
-export const { updateData, setLoading, setCurrentPage,setPageTitle } = movieSlice.actions;
+export const { updateData, setLoading, setCurrentPage, setPageTitle } =
+  movieSlice.actions;
 
 export default movieSlice.reducer;

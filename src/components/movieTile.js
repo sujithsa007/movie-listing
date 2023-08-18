@@ -4,16 +4,13 @@ import CONSTANTS from "../constants/constants";
 
 const MovieTile = ({ searchTerm }) => {
   const { gridData, loading } = useSelector((state) => state.movieState);
-  
 
   return (
     <div className="scrollable-container">
       <div className="mobile-grid-container">
-      {loading  && (
+        {loading && (
           <div className="loading-overlay">
-            <div >
-              Loading...
-            </div>
+            <div>Loading...</div>
           </div>
         )}
         {gridData
@@ -33,7 +30,6 @@ const MovieTile = ({ searchTerm }) => {
               <div className="item-title">{item.name}</div>
             </div>
           ))}
-         
       </div>
     </div>
   );

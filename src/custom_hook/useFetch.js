@@ -6,11 +6,11 @@ import { useCallback } from "react";
 import axios from "axios";
 import { useSelector } from "react-redux";
 import {
-    updateData,
-    setLoading,
-    setCurrentPage,
-    setPageTitle,
-  } from "../redux/movieSlice";
+  updateData,
+  setLoading,
+  setCurrentPage,
+  setPageTitle,
+} from "../redux/movieSlice";
 
 const useFetch = (dispatch, CONSTANTS) => {
   const { gridData } = useSelector((state) => state.movieState);
@@ -29,7 +29,7 @@ const useFetch = (dispatch, CONSTANTS) => {
 
           dispatch(updateData(newData));
           dispatch(setLoading(false));
-          dispatch(setPageTitle(response.data.page['title']));
+          dispatch(setPageTitle(response.data.page["title"]));
           dispatch(setCurrentPage(pageNum));
         })
         .catch((error) => {
